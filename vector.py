@@ -28,6 +28,15 @@ class vector:
 		for i in range(len(self.x)):
 			p = p + self.x[i] * b.x[i]
 		return p
+
+	def print_vector(self):
+		s = '('
+		for i in range(len(self.x) - 1):
+			s = s + str(self.x[i]) + ', '
+		s = s + str(self.x[len(self.x) - 1])
+		s = s + ')'
+		print s
+
 		
 
 
@@ -36,9 +45,10 @@ x1 = [1,2,3]
 x2 = [0,0,1]		
 a = vector(x1)
 b = vector(x2)
+a.check(b)
 c =  a + b
-print c
+c.print_vector()
 c = a - b
-print c
+c.print_vector()
 c = a.scal_mul(b)
 print c
