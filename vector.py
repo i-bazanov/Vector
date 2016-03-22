@@ -40,9 +40,8 @@ class vector:
 		
 
 
-
-x1 = [1,2,3]
-x2 = [0,0,1]		
+x1 = input()
+x2 = input()
 a = vector(x1)
 b = vector(x2)
 a.check(b)
